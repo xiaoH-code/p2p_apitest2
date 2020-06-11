@@ -1,0 +1,10 @@
+{
+  "register": [
+    {"title":"register_success","phone": "13099881111", "password": "test123", "verifycode": "8888", "phone_code": "666666", "dy_server": "on","statusCode": 200,"status":200,"description":"注册成功"},
+    {"title":"register_phone_is_exist","phone": "13099881111", "password": "test123", "verifycode": "8888", "phone_code": "666666", "dy_server": "on","statusCode": 200,"status":100,"description":"手机已存在!"},
+    {"title":"register_password_is_null","phone": "13099881112", "password": "", "verifycode": "8888", "phone_code": "666666", "dy_server": "on","statusCode": 200,"status":100,"description":"密码不能为空"},
+    {"title":"register_img_code_error","phone": "13099881113", "password": "test123", "verifycode": "1234", "phone_code": "666666", "dy_server": "on","statusCode": 200,"status":100,"description":"验证码错误!"},
+    {"title":"register_sms_code_error","phone": "13099881113", "password": "test123", "verifycode": "8888", "phone_code": "111111", "dy_server": "on","statusCode": 200,"status":100,"description":"验证码错误"},
+    {"title":"register_no_agree_protocol","phone": "13099881113", "password": "test123", "verifycode": "8888", "phone_code": "666666", "dy_server": "off","statusCode": 200,"status":100,"description":"请同意我们的条款"}
+  ]
+}

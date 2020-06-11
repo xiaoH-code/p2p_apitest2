@@ -1,0 +1,14 @@
+{
+  "test_get_img_verify_code": [
+    {
+      "desc": "获取随机小数验证码",
+      "type": "float",
+      "statusCode": 200
+    },
+    {
+      "desc": "获取随机整数验证码",
+      "type": "int",
+      "statusCode": 200
+    }
+  ]
+}

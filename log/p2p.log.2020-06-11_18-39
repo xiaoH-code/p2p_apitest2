@@ -1,0 +1,21 @@
+2020-06-11 18:38:03,846 INFO [root] [__init__.py(<module>:5)] - 测试INFO日志
+2020-06-11 18:38:03,965 INFO [root] [utils.py(read_data_file:92)] - [['int', 200]]
+2020-06-11 18:38:03,993 INFO [root] [utils.py(read_data_file:92)] - [['13099881113', 'test123', '8888', '666666', 'off', 200, 100, '请同意我们的条款']]
+2020-06-11 18:38:04,677 INFO [root] [test_login_params.py(setUpClass:26)] - delete sql1 = delete from mb_member_register_log where phone in ('13099881111','13099881112','13099881113','13099881114');
+2020-06-11 18:38:05,661 INFO [root] [test_login_params.py(setUpClass:29)] - delete sql1 = delete i.* from mb_member_login_log i INNER JOIN mb_member m on i.member_id = m.id WHERE m.phone in ('13099881111','13099881112','13099881113','13099881114');
+2020-06-11 18:38:06,316 INFO [root] [test_login_params.py(setUpClass:32)] - delete sql1 = delete i.* from mb_member_info i INNER JOIN mb_member m on i.member_id = m.id WHERE m.phone in ('13099881111','13099881112','13099881113','13099881114');
+2020-06-11 18:38:09,694 INFO [root] [test_login_params.py(setUpClass:35)] - delete sql1 = delete from mb_member WHERE phone in ('13099881111','13099881112','13099881113','13099881114');
+2020-06-11 18:38:10,272 INFO [root] [test_login_params.py(test01_get_img_verify_code:47)] - response = <Response [200]>
+2020-06-11 18:38:20,140 INFO [root] [test_login_params.py(test06_register:111)] - sms_response = {'status': 200, 'description': '短信发送成功'}
+2020-06-11 18:38:21,165 INFO [root] [test_login_params.py(test06_register:116)] - register response = {'status': 200, 'data': {'isLogin': '1'}, 'description': '注册成功'}
+2020-06-11 18:38:22,602 INFO [root] [test_login_params.py(test13_login_success:222)] - login response={'status': 200, 'description': '登录成功'}
+2020-06-11 18:38:22,977 INFO [root] [test_login_params.py(test14_username_is_not_exist:230)] - login response={'status': 100, 'description': '用户不存在'}
+2020-06-11 18:38:23,382 INFO [root] [test_login_params.py(test15_password_is_empty:238)] - login response={'status': 100, 'description': '密码不能为空'}
+2020-06-11 18:38:23,725 INFO [root] [test_login_params.py(test16_login_password_wrong:246)] - 密码错误1次，响应为：{'status': 100, 'data': {'login_error': 2}, 'description': '密码错误1次,达到3次将锁定账户'}
+2020-06-11 18:38:23,825 INFO [root] [test_login_params.py(test16_login_password_wrong:250)] - 密码错误2次，响应为：{'status': 100, 'data': {'login_error': 3}, 'description': '密码错误2次,达到3次将锁定账户'}
+2020-06-11 18:38:23,889 INFO [root] [test_login_params.py(test16_login_password_wrong:254)] - 密码错误3次，响应为：{'status': 100, 'description': '由于连续输入错误密码达到上限，账号已被锁定，请于1.0分钟后重新登录'}
+2020-06-11 18:38:24,515 INFO [root] [test_login_params.py(test16_login_password_wrong:258)] - 密码错误3次后输入正确密码登录，响应为：{'status': 100, 'description': '由于连续输入错误密码达到上限，账号已被锁定，请于1.0分钟后重新登录'}
+2020-06-11 18:39:24,715 INFO [root] [test_login_params.py(test16_login_password_wrong:264)] - 密码错误3次后等待60秒，输入正确密码登录，响应为：{'status': 200, 'description': '登录成功'}
+2020-06-11 18:39:26,191 INFO [root] [test_login_params.py(test17_is_login_nologin:271)] - islogin response={'status': 250, 'description': '您未登陆！'}
+2020-06-11 18:39:28,199 INFO [root] [test_login_params.py(test18_is_login:279)] - login response={'status': 200, 'description': '登录成功'}
+2020-06-11 18:39:29,793 INFO [root] [test_login_params.py(test18_is_login:283)] - islogin response={'status': 200, 'description': 'OK'}

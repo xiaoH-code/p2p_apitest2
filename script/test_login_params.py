@@ -47,6 +47,7 @@ class test_login(unittest.TestCase):
         response = self.loginAPI.getImgCode(self.session, randNum)
         logging.info("response = {}".format(response))
         self.assertEqual(statusCode,response.status_code)
+        logging.info('modify')
 
     # #获取图片验证码，随机数为小数
     # @unittest.skip

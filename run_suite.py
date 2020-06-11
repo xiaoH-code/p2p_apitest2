@@ -19,7 +19,8 @@ suite.addTest(unittest.makeSuite(test_tender))
 suite.addTest(unittest.makeSuite(test_tender_process))
 
 #定义生成测试报告的路径
-report_file = app.BASE_DIR + "/report/report{}.html".format(time.strftime("%Y%m%d %H%M%S"))
+#report_file = app.BASE_DIR + "/report/report{}.html".format(time.strftime("%Y%m%d %H%M%S"))
+report_file = app.BASE_DIR + "/report/report.html"
 
 #使用HTMLTestRunner来生成测试报告
 with open(report_file,mode='wb') as f:
